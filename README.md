@@ -234,5 +234,3 @@ Ces frameworks sont légers, simples à prendre en main et proposent des exemple
 
 ![alt text](screen/Schema.png)
 
-Liens repository Docker Hub
-<li><a href="#http://localhost:5083">http://localhost:5083</a></li>

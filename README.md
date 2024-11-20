@@ -137,7 +137,7 @@ docker ps
 
 . Screen présentant les images
 
-![alt text](screens/DockerImage.png)
+![alt text](screen/DockerImage.png)
 
 ``` bash
 docker ps

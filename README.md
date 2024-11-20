@@ -47,11 +47,11 @@ Voici la structure du projet:
 ``` bash
 # Django Soft UI Dashboard
 upstream django-soft-ui {
-    server django-soft-ui:8000;
+    server django-soft-ui:8040;
 }
 
 server {
-    listen 7010;
+    listen 5005;
     server_name localhost;
 
     location / {
@@ -63,11 +63,11 @@ server {
 
 # Flask Soft UI Design
 upstream flask-soft-ui {
-    server flask-soft-ui:5000;
+    server flask-soft-ui:8070;
 }
 
 server {
-    listen 7011;
+    listen 5008;
     server_name localhost;
 
     location / {
@@ -77,13 +77,13 @@ server {
     }
 }
 
-# Ecommerce Flask Stripe
+# Flask Material Dashboard
 upstream ecommerce-flask-stripe {
-    server ecommerce-flask-stripe:7000;
+    server ecommerce-flask-stripe:8060;
 }
 
 server {
-    listen 7012;
+    listen 5007;
     server_name localhost;
 
     location / {
@@ -93,13 +93,13 @@ server {
     }
 }
 
-# Rocket Django
+# Flask Atlantis Dark
 upstream rocket-django {
-    server rocket-django:8001;
+    server rocket-django:8050;
 }
 
 server {
-    listen 7013;
+    listen 5006;
     server_name localhost;
 
     location / {
@@ -120,45 +120,45 @@ services:
   django-soft-ui:
     build: ./apps/django-soft-ui-dashboard
     ports:
-      - "8000:8000"
+      - "5080:5080"
     networks:
       - app_network
 
   flask-soft-ui:
     build: ./apps/flask-soft-ui-design
     ports:
-      - "5000:5000"
+      - "5083:5083"
     networks:
       - app_network
 
-  ecommerce-flask-stripe:
+  flask-material-dashboard:
     build: ./apps/ecommerce-flask-stripe
     ports:
-      - "7000:7000"
+      - "5082:5082"
     networks:
       - app_network
 
-  rocket-django:
+  flask-atlantis-dark:
     build: ./apps/rocket-django
     ports:
-      - "8001:8001"
+      - "5081:5081"
     networks:
       - app_network
 
   nginx:
     image: nginx:latest
     ports:
-      - "7010:7010"
-      - "7011:7011"
-      - "7012:7012"
-      - "7013:7013"
+      - "5080:5080"
+      - "5081:5081"
+      - "5082:5082"
+      - "5083:5083"
     volumes:
       - ./nginx:/etc/nginx/conf.d
     depends_on:
       - django-soft-ui
       - flask-soft-ui
-      - ecommerce-flask-stripe
-      - rocket-django
+      - flask-material-dashboard
+      - flask-atlantis-dark
     networks:
       - app_network
 
@@ -209,9 +209,9 @@ docker ps -a
 
 Testez vos applications en local sur les ports suivants: ( a update) 
   <ul>
-    <li><a href="#http://localhost:7010">http://localhost:7010</a></li>
-    <li><a href="#http://localhost:7011">http://localhost:7011</a></li>
-    <li><a href="#http://localhost:7012">http://localhost:7012</a></li>
+    <li><a href="#http://localhost:5080">http://localhost:5080</a></li>
+    <li><a href="#http://localhost:5081">http://localhost:5081</a></li>
+    <li><a href="#http://localhost:5082">http://localhost:5082</a></li>
 
   </ul>
 

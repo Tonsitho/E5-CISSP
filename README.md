@@ -194,7 +194,7 @@ docker push your_username/nom_image:tag_name_for_hub
 <!-- INTERFACES -->
 ## Quelques interfaces
 
-. Soft UI Dashboard3
+. Flask Soft UI Dashboard
 
 ![alt text](screen/Dashboard.png)
 

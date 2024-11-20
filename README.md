@@ -146,11 +146,11 @@ ou
 ``` bash
 docker ps -a
 ```
-. Screen présentant les conteneurs en cours d'exécution (a update)
+. Screen présentant les conteneurs en cours d'exécution
 
 ![alt text](screen/DockerPS.png)
 
-Testez vos applications en local sur les ports suivants: ( a update) 
+Testez vos applications en local sur les ports suivants:
   <ul>
     <li><a href="#http://localhost:5080">http://localhost:5080</a></li>
     <li><a href="#http://localhost:5081">http://localhost:5081</a></li>

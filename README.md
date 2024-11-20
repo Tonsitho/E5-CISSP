@@ -216,19 +216,19 @@ docker push your_username/nom_image:tag_name_for_hub
 
 Flask Soft UI Design
 
-Léger et facile à utiliser.
-Fournit une interface utilisateur moderne et personnalisable.
+Flask App conçu sur un design moderne. Conçu pour ceux qui aiment les éléments audacieux et les beaux sites web, Soft UI Design est prêt à vous aider à créer des sites web et des applications web époustouflants. Soft UI Design est construit avec plus de 70 éléments frontaux individuels, comme des boutons, des entrées, des barres de navigation, des onglets de navigation, des cartes ou des alertes, vous donnant la liberté de choisir et de combiner.
 
-Ecommerce Flask Stripe
+Flask Atlantis Dark
 
-Simplifie l'intégration des paiements avec Stripe.
-Idéal pour les projets de commerce électronique.
+Tableau de bord Flask open-source généré par AppSeed sur un design Bootstrap moderne. Atlantis Dark est un tableau de bord d'administration Bootstrap gratuit qui est magnifiquement et élégamment conçu pour afficher diverses métriques, chiffres ou visualisations de données. Le tableau de bord Atlantis Lite dispose de 2 layouts, de nombreux plugins et composants UI pour aider les développeurs à créer des tableaux de bord rapidement et efficacement afin d'économiser du temps de développement et d'aider les utilisateurs à prendre les bonnes décisions rapidement sur la base des données existantes.
 
-Rocket Django
+Flask Material Dashboard
 
-Robuste et bien structuré pour des projets évolutifs.
-Offre des fonctionnalités prédéfinies pour un développement rapide.
-Ces frameworks sont légers, simples à prendre en main et proposent des exemples pratiques pour accélérer le développement tout en assurant une qualité professionnelle.
+Tableau de bord Flask open-source généré par AppSeed au-dessus d'un design moderne. Conçu pour ceux qui aiment les éléments audacieux et les beaux sites web, Material Dashboard est prêt à vous aider à créer des sites web et des applications web époustouflants. Material Dashboard est construit avec plus de 70 éléments frontaux individuels, comme des boutons, des entrées, des barres de navigation, des onglets de navigation, des cartes ou des alertes, vous donnant la liberté de choisir et de combiner.
+
+Django Soft UI Dashboard
+
+Tableau de bord Django open-source conçu sur Soft UI Dashboard, un design Bootstrap 5 open-source de Creative-Tim. Conçu pour ceux qui aiment les éléments audacieux et les beaux sites web. Composé de centaines d'éléments, de blocs et de pages entièrement codées, Soft UI Dashboard est prêt à vous aider à créer des sites web et des applications web époustouflants.
 
 ## Diagramme Projet
 

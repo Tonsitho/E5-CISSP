@@ -42,72 +42,7 @@ Voici la structure du projet:
 <!-- FILES CONFIGURATIONS -->
 ## Configurations
 
-. Contenu du fichier mynginxconf.conf
 
-``` bash
-# Django Soft UI Dashboard
-upstream django-soft-ui {
-    server django-soft-ui:8040;
-}
-
-server {
-    listen 5005;
-    server_name localhost;
-
-    location / {
-        proxy_pass http://django-soft-ui;
-        proxy_set_header Host $host:$server_port;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    }
-}
-
-# Flask Soft UI Design
-upstream flask-soft-ui {
-    server flask-soft-ui:8070;
-}
-
-server {
-    listen 5008;
-    server_name localhost;
-
-    location / {
-        proxy_pass http://flask-soft-ui;
-        proxy_set_header Host $host:$server_port;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    }
-}
-
-# Flask Material Dashboard
-upstream ecommerce-flask-stripe {
-    server ecommerce-flask-stripe:8060;
-}
-
-server {
-    listen 5007;
-    server_name localhost;
-
-    location / {
-        proxy_pass http://ecommerce-flask-stripe;
-        proxy_set_header Host $host:$server_port;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    }
-}
-
-# Flask Atlantis Dark
-upstream rocket-django {
-    server rocket-django:8050;
-}
-
-server {
-    listen 5006;
-    server_name localhost;
-
-    location / {
-        proxy_pass http://rocket-django;
-        proxy_set_header Host $host:$server_port;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    }
-}
 
 ```
 

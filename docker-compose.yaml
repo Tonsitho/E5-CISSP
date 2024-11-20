@@ -1,0 +1,57 @@
+version: '3.7'
+
+services:
+  django-soft-ui:
+    # build: ./django-soft-ui-dashboard
+    image: th0m8s/django-soft-ui-dashboard:prod
+    ports:     
+      - "5080:5005"
+    networks:
+      - app_network
+
+  flask-soft-ui:
+    # build: ./apps/flask-soft-ui-design
+    image: th0m8s/flask-soft-ui-dashboard:prod
+    ports: 
+      - "5083:5008"
+    networks:
+      - app_network
+
+  flask-material-dashboard:
+    # build: ./apps/ecommerce-flask-stripe
+    image: th0m8s/flask-material-dashboard:prod
+    ports:
+      - "5082:5007"
+    networks:
+      - app_network
+
+  flask-atlantis-dark:
+    # build: ./apps/rocket-django
+    image: th0m8s/flask-atlantis-dark:prod
+    ports:      
+      - "5081:5006"
+    networks:
+      - app_network
+
+  nginx:
+    image: "nginx:mainline-alpine3.20-slim"
+    ports:      
+      - "5080:5005"
+      - "5081:5006"
+      - "5082:5007"
+      - "5083:5008"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+    networks:
+      - web_network
+    depends_on:
+      - django-soft-ui
+      - flask-soft-ui
+      - flask-material-dashboard
+      - flask-atlantis-dark
+
+networks:
+  app_network:
+    driver: bridge
+  web_network:
+    driver: bridge

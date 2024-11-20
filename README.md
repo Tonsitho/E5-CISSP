@@ -148,7 +148,7 @@ docker ps -a
 ```
 . Screen présentant les conteneurs en cours d'exécution (a update)
 
-![alt text](screens/dockerps.png)
+![alt text](screens/DockerPS.png)
 
 Testez vos applications en local sur les ports suivants: ( a update) 
   <ul>
